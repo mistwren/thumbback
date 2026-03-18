@@ -17,7 +17,7 @@ const notoSansJP = Noto_Sans_JP({
 
 export const metadata: Metadata = {
   title: "ThumbBack",
-  description: "Modern Thumbnail Gallery",
+  description: "Track every thumbnail change for any video and discover what works.",
 };
 
 export default function RootLayout({

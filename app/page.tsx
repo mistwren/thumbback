@@ -70,21 +70,12 @@ export default function HomePage() {
     </div>
 
     <div className="flex items-center justify-between sm:justify-end gap-2">
-      <Link 
-        href={`https://www.youtube.com/watch?v=${selectedVideo?.id}`} 
-        target="_blank" 
-        rel="noopener noreferrer" 
-        className="flex-grow sm:flex-grow-0 whitespace-nowrap flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-red-50 text-red-600 hover:bg-red-600 hover:text-white transition-all duration-300 font-bold text-sm"
-      >
+      <Link href={`https://www.youtube.com/watch?v=${selectedVideo?.id}`} target="_blank" rel="noopener noreferrer" className="flex-grow sm:flex-grow-0 whitespace-nowrap flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-red-50 text-red-600 hover:bg-red-600 hover:text-white transition-all duration-300 font-bold text-sm">
         <SiYoutube size={20} />
         <span>Watch Video</span>
         <FiExternalLink size={14} />
       </Link>
-      
-      {/* デスクトップ用区切り線 (モバイルでは隠す) */}
       <div className="hidden sm:block w-px h-8 bg-slate-100 mx-2" />
-
-      {/* 閉じるボタン - モバイルでは右上に絶対配置 */}
       <div className="absolute top-6 right-6 sm:static">
         <Dialog.Close className="p-2.5 rounded-xl hover:bg-slate-100 text-slate-400 hover:text-slate-900 transition-all bg-white/50 backdrop-blur-sm">
           <FiX size={24} />
